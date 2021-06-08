@@ -1,0 +1,4 @@
+1- criação da pasta do projeto.
+2- Importar o mysql-connector para as dependencias.
+3- Criar a pasta model e o arquivo Agenda.java contendo as variaveis de ambiente junto com os get e set.
+4- Criar a pasta factory e o arquivo de conexão com o banco.
