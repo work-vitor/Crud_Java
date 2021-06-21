@@ -2,3 +2,5 @@
 2- Importar o mysql-connector para as dependencias.
 3- Criar a pasta model e o arquivo Agenda.java contendo as variaveis de ambiente junto com os get e set.
 4- Criar a pasta factory e o arquivo de conexão com o banco.
+5-Fiz a troca do mysql-connector8.0 pelo connector5.1.18.
+6-Criei a classe save para realizar a insert no banco de dados,
