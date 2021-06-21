@@ -10,13 +10,14 @@ public class ConnectionFactory {
 	//Senha do banco
 	private static final String PASSWORD = "123456";
 	//Caminho do banco dde daaos
-	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda";
+	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/agenda?useTimezone=true&serverTimezone=UTC";
+	private static final String driver = "com.mysql.cj.jdbc.Driver";
 	
 	//Conexao com o banco de dados
 	
 	public static Connection createConnectionToMySQL() throws Exception{
 		//Faz com que a classe seja carregada pela JVM
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName(driver);
 		
 		Connection connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
 		

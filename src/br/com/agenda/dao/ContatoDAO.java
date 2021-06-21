@@ -3,7 +3,7 @@ package br.com.agenda.dao;
 import java.sql.Connection;
 import java.sql.Date;
 
-import com.mysql.jdbc.PreparedStatement;
+import com.mysql.cj.jdbc.JdbcPreparedStatement;
 
 import br.com.agenda.factory.ConnectionFactory;
 import br.com.agenda.model.Contato;
@@ -22,7 +22,7 @@ public class ContatoDAO {
 		String sql = "INSERT INTO contatos(nome, idade, datacadastro) VALUES (?, ?, ?) ";
 		
 		Connection conn = null;
-		PreparedStatement pstm = null;
+		JdbcPreparedStatement pstm = null;
 		
 		try {
 			
@@ -30,7 +30,7 @@ public class ContatoDAO {
 			conn = ConnectionFactory.createConnectionToMySQL();//Chamando a conexão
 			
 			//Criamos uma PreparedStatement, para executar uma query
-			pstm = (PreparedStatement) conn.prepareStatement(sql);
+			pstm =  (JdbcPreparedStatement) conn.prepareStatement(sql);
 
 			//Adicionar os valores que são esperados pela query
 			pstm.setString(1, contato.getNome());
