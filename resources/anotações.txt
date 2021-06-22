@@ -8,4 +8,5 @@
 então novamente foi feita a troca, dessa vez do connector 5.1.18 para o connector8.0.23.
 8-além de tbm alterar o arquivo ConnectionFactory alterando a variavel "DATABASE_URL" e criando a variavel "driver" para armazenar o caminho do driver.
 9-e tambem foi feito uma alteração no arquivo ContatoDAO onde foi trocado o termo prepareStatement por jdbcprepareStatement.
-10-No arquivo ContatoDAO foi criado a classe getContatos para listar todos os contatos armazenados no banco e no arquivo main eles foram listados.
+10-No arquivo ContatoDAO foi criado o metodo getContatos para listar todos os contatos armazenados no banco e no arquivo main eles foram listados.
+11-Foi criado o metodo update no arquivo contatoDAO, para atualizar os dados dos usuários.
