@@ -6,5 +6,6 @@
 6-Criei a classe save para realizar a insert no banco de dados,
 7-foi criado a classe main para realizar o insert, porém correu um erro por causa da versão do mysql_connector
 então novamente foi feita a troca, dessa vez do connector 5.1.18 para o connector8.0.23.
--além de tbm alterar o arquivo ConnectionFactory alterando a variavel "DATABASE_URL" e criando a variavel "driver" para armazenar o caminho do driver.
-e tambem foi feito uma alteração no arquivo ContatoDAO onde foi trocado o termo prepareStatement por jdbcprepareStatement.
+8-além de tbm alterar o arquivo ConnectionFactory alterando a variavel "DATABASE_URL" e criando a variavel "driver" para armazenar o caminho do driver.
+9-e tambem foi feito uma alteração no arquivo ContatoDAO onde foi trocado o termo prepareStatement por jdbcprepareStatement.
+10-No arquivo ContatoDAO foi criado a classe getContatos para listar todos os contatos armazenados no banco e no arquivo main eles foram listados.
