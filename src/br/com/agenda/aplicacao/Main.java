@@ -14,7 +14,7 @@ public class Main {
 		
 		//Inserindo os dados no banco
 		Contato contato = new Contato();
-		contato.setNome("Paulo Vitor");
+		contato.setNome("Vitor Rodrigues");
 		contato.setIdade(18);
 		contato.setDataCadastro(new Date());
 
@@ -22,12 +22,15 @@ public class Main {
 		
 		//Atualizar o contato
 		Contato c1 = new Contato();
-		c1.setNome("João vitor costa");
+		c1.setNome("João vitor ");
 		c1.setIdade(19);
 		c1.setDataCadastro(new Date());
 		c1.setId(1);
 		
-		contatoDAO.update(c1);
+		//contatoDAO.update(c1);
+		
+		//Delete
+		contatoDAO.deleteById(2);
 		
 		//Visualizando os registros do banco de dados
 		System.out.println("Nome       | Idade  | Data de Cadastro");
